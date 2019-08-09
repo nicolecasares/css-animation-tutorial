@@ -1,6 +1,6 @@
 # css-animation-tutorial 
 
-Followed and tweaked a animation tutorial by Travis Media.
+Followed and tweaked an animation tutorial by Travis Media.
 
 https://www.youtube.com/watch?v=zHUpx90NerM
 
