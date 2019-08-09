@@ -20,5 +20,5 @@ https://html-css-js.com/css/generator/transform/
 Animation/CheatSheet
 https://learn-the-web.algonquindesign.ca/topics/css-animations-effects-cheat-sheet/#animations
 
-A cool animation library I found
+A cool animation generator I found
 http://animista.net/
