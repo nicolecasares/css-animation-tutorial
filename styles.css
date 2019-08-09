@@ -1,0 +1,87 @@
+body {
+    background: #333333;
+}
+
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    /* use position relative so we can move div relative to its normal positon. We also need to set a postion to use top, bottom, left and right poperties in css */
+    position: relative;
+    /* name of animation should describe animation */
+    animation-name: distort;
+    /* how long the animation should last*/
+    animation-duration: 4s;
+    /* how long the animaiton should repeat*/
+    animation-iteration-count: 5;
+    /*how long until the animation should start*/
+    animation-delay: 2s;
+    /* in which direction should the animation start/repeat */
+    animation-direction: alternate;
+    /* How the animation should transistion through changes in keyframes*/
+    animation-timing-function: ease;
+
+    animation-fill-mode: both;
+
+    /* You can create animation in one line using this order animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state. */
+    animation: distort 4s 5 1s alternate both ease;
+}
+
+/* used https://html-css-js.com/css/generator/transform/ to create transistions */
+
+@keyframes distort {
+    0%{
+        background: #ffffff;
+        left: 0;
+        top: 0;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    25%{
+        background: #e644b0;
+        left: 300px;
+        top: 0;
+        -moz-transform: skew(-23deg, -1deg);
+        -webkit-transform: skew(-23deg, -1deg);
+        -o-transform: skew(-23deg, -1deg);
+        -ms-transform: skew(-23deg, -1deg);
+        transform: skew(-23deg, -1deg);
+    }
+
+    50%{
+        background: #81c8f7;
+        left: 300px;
+        top: 300px;
+        -moz-transform: skew(27deg, 0deg);
+        -webkit-transform: skew(27deg, 0deg);
+        -o-transform: skew(27deg, 0deg);
+        -ms-transform: skew(27deg, 0deg);
+        transform: skew(27deg, 0deg);
+    }
+
+    75%{
+        background: #b2f781;
+        left: 0px;
+        top: 300px;
+        -moz-transform: skew(-21deg, -32deg);
+        -webkit-transform: skew(-21deg, -32deg);
+        -o-transform: skew(-21deg, -32deg);
+        -ms-transform: skew(-21deg, -32deg);
+        transform: skew(-21deg, -32deg);
+    }
+
+    100%{
+        background: #ffffff;
+        top: 0;
+        left: 0;
+        -moz-transform:none;
+        -webkit-transform:none;
+        -o-transform:none;
+        -ms-transform:none;
+        transform:none;
+    }
+}
