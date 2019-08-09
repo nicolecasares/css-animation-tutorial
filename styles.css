@@ -30,7 +30,7 @@ body {
 /* used https://html-css-js.com/css/generator/transform/ to create transistions */
 
 @keyframes distort {
-    0%{
+    0% {
         background: #ffffff;
         left: 0;
         top: 0;
@@ -41,7 +41,7 @@ body {
         transform: none;
     }
 
-    25%{
+    25% {
         background: #e644b0;
         left: 300px;
         top: 0;
@@ -52,7 +52,7 @@ body {
         transform: skew(-23deg, -1deg);
     }
 
-    50%{
+    50% {
         background: #81c8f7;
         left: 300px;
         top: 300px;
@@ -63,7 +63,7 @@ body {
         transform: skew(27deg, 0deg);
     }
 
-    75%{
+    75% {
         background: #b2f781;
         left: 0px;
         top: 300px;
@@ -74,7 +74,7 @@ body {
         transform: skew(-21deg, -32deg);
     }
 
-    100%{
+    100% {
         background: #ffffff;
         top: 0;
         left: 0;
